@@ -15,6 +15,30 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheetindex.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/slick.css">
+	 <script>
+        $(document).ready(function(){
+            if($(window).height()<664){
+            $('.about12').attr({href:"#1"});
+        }
+        else{
+            $('.about12').attr({href:'#2'});
+        }
+            
+        });
+        
+    </script>
+    <script>
+        $(document).ready(function(){
+            if($(window).height()<664){
+            $('.speak12').attr({href:"#speakersmobile"});
+        }
+        else{
+            $('.speak12').attr({href:'#speakers'});
+        }
+            
+        });
+        
+    </script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="padding:5px 30px; display:flex; color:#FFF; background-color:#000;">
@@ -26,7 +50,7 @@
 		    <ul class="nav" style="width:100%; color:#FFF; background-color:#000 ">
 		    	<!-- Freedom -->
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#1">About Us</a>
+		        	<a class="nav-link about12">About Us</a>
 		     	</li>
 		     	<!-- Explore -->
 			    <li class="nav-item desktop">
@@ -34,7 +58,7 @@
 			    </li>
 			    <!-- Community -->
 			    <li class="nav-item">
-			        <a class="nav-link" href="#speakers">Speakers</a>
+			        <a class="nav-link speak12">Speakers</a>
 			    </li>
 			    <li class="nav-item desktop">
 			        <a class="nav-link navbar-brand " id="navv" href="#"> <img src="images/sfd.png"> </a>
@@ -72,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="About">
+				<div class="About"id=2>
 					<h1>Software Freedom Day</h1>
 					<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
 				</div>
