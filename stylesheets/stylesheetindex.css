@@ -206,7 +206,7 @@ table:nth-child(1) th{padding-top: 0;}
     .About h1{margin-bottom: 30px; font-family: quicksand}
     .About p{color: rgba(255,255,255,0.8); font-size: 1.1em}
     .fixedheaderphone{font-size: 25px; text-align: center; color: #FFF; margin-bottom: 10px}
-    .headingsphone{height: 45vh; background: url('images/WhatsApp Image 2019-07-10 at 10.44.55 AM.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center}
+    .headingsphone{height: 45vh; background: url('../images/WhatsApp Image 2019-07-10 at 10.44.55 AM.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center}
     .landingwrapperphone{background: rgba(0,0,0,0.2); height: 100%; display: flex; justify-content: center; align-items: center;}
     .eventheading{font-family: poppins; padding: 0px 20px; margin-top: 50px; color: #FFF; font-size: 2em}
     .eventswrapper{height: 60vh; font-family: montserrat; color: #FFF; width: 95vw; padding: 0 4vw; margin: auto; overflow-y: scroll}
