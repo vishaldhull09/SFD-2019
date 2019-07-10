@@ -11,22 +11,75 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 	<script type="text/javascript" src="scripts/slick.min.js"></script>
+    
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheetindex.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/slick.css">
+    <script>
+        $(document).ready(function(){
+            if($(window).height()<664 || $(window).width()<1064){
+            $('.about12').attr({href:"#1"});
+        }
+        else{
+            $('.about12').attr({href:'#2'});
+        }
+            
+        });
+	     
+	</script>
+	<script>
+        $(document).ready(function(){
+            if($(window).height()>664){
+            $('#events').css({paddingTop:"150px"});
+		    $('#speakers').css({paddingTop:"200px"});
+        }
+         
+        });
+        
+    </script>
+	
+    <script>
+        $(document).ready(function(){
+            if($(window).height()<664 || $(window).width()<1064){
+            $('.speak12').attr({href:"#speakersmobile"});
+        }
+        else{
+            $('.speak12').attr({href:'#speakers'});
+        }
+            
+        });
+        
+    </script>
+   <script>   jQuery(document).ready(function($) {
+
+        $(".nav-link").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 100);
+        });
+    });
+    </script>
+    <style type="text/css">
+    	#back{
+
+    	}
+    </style>
+
+}
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="padding:5px 30px; display:flex; color:#FFF; background-color:#000;">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top menu stroke" style="padding:5px 30px; display:flex; color:#FFF; background-color:#000;">
 		<a class="navbar-brand mobile" id="navv" href="#"> <img src="images/sfd.png"> </a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="nav" style="width:100%; color:#FFF; background-color:#000 ">
+		    <ul class="nav navbar-nav" data-toggle="collapse"data-target=".navbar-collapse" style="width:100%; color:#FFF; background-color:#000 ">
 		    	<!-- Freedom -->
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#1">About Us</a>
+		        	<a class="nav-link about12">About Us</a>
 		     	</li>
 		     	<!-- Explore -->
 			    <li class="nav-item desktop">
@@ -34,10 +87,10 @@
 			    </li>
 			    <!-- Community -->
 			    <li class="nav-item">
-			        <a class="nav-link" href="#speakers">Speakers</a>
+			        <a class="nav-link speak12">Speakers</a>
 			    </li>
 			    <li class="nav-item desktop">
-			        <a class="nav-link navbar-brand " id="navv" href="#"> <img src="images/sfd.png"> </a>
+			        <a class="nav-link navbar-brand " id="navv" href="#"> <img src="images/sfd.png"height=50% width=50%s> </a>
 			    </li>
 			    <li class="nav-item">
 			        <a class="nav-link" href="#gallery">Gallery</a>
@@ -60,19 +113,19 @@
 					Your browser does not support the video tag.
 				</video>
 			</div>
-			<div class="landingwrap"></div>
-			<div class="landingcontent">
-				
+			<div class="landingwrap"id=2></div>
+               <div class="landingcontent" style="background-image: url(images/WhatsApp%20Image%202019-07-10%20at%2010.44.55%20AM.jpeg); background-size: 800px; background-repeat: no-repeat;background-position: center;z-index: ">
+								
 				<div class="fixedheaderwrapper" style="position: relative">
 					<div class="fixedheaders">
-						<div class="fixedheader">
+						<div class="fixedheader"style="padding-top: 145px">
 							<div class="headers">Freedom.</div>
 							<div class="headers">Explore.</div>
 							<div class="headers">Community.</div>
 						</div>
 					</div>
 				</div>
-				<div class="About">
+				<div class="About"style='padding-top: 200px'>
 					<h1>Software Freedom Day</h1>
 					<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
 				</div>
@@ -80,7 +133,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="landingphone mobile">
+	<section class="landingphone mobile"style="padding-top: 55px">
 		
 		<div class="headingsphone">
 			<div class="landingwrapperphone">
@@ -96,9 +149,9 @@
 			<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
 		</div>
 	</section>
-	<section id="events"style='height:200px'>
+	<section id="events"style='height:200px;padding-top:5px'>
 		<h1 class="eventheading">Events</h1>
-        <div class="eventswrapper" style='text-align:center;margin-top:85px;font-size:30px'>
+        <div class="eventswrapper" style='text-align:center;margin-top:95px;font-size:30px'>
         Coming Soon...</div>
        
         <!--
@@ -205,11 +258,11 @@
 		</div>-->
         
 	</section>
-	<section id="speakers" class="desktop">
+	<section id="speakers" class="desktop"style='padding-top:40px'>
 		<div class="speakerinfo">
 			<div>
-				<h1 class="speakerheading selectedspeaker"><div>01 </div>Past Speakers</h1>
-				<h1 class="speakerheading"><div>02 </div>Past Keynote Speakers</h1>
+				<h1 class="speakerheading selectedspeaker">Past Speakers</h1>
+				
 			</div>
 		</div>
 		<div class="speakerpic">
@@ -221,27 +274,24 @@
 							<div>
 								<h1>Joe Nash</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
+								
+								<p>Project manager for WILDLABS<br>Formerly GitHub Education</p>
 								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-6">
 					<div class="speakerwrapper">
-						<div class="image"><img src="images/Janu_Verma.jpg"></div>
+						<div class="image"><img src="images/Janu_Verma.jpg" sty></div>
 						<div class="links">
 							<div>
 								<h1>Janu Verma</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Senior Machine Learning Scientist</p><br>
+                                                                 <p>Hike Messenger</p>
+								
 							</div>
 						</div>
 					</div>
@@ -253,11 +303,9 @@
 							<div>
 								<h1>Jigyasa Grover</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Machine Learning Engineer<br>Red Hat Women in Open Source<br>
+								Facebook</p>
+								
 							</div>
 						</div>
 					</div>
@@ -269,11 +317,8 @@
 							<div>
 								<h1>Khushbu Parekh</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Cloud Developer<br>AVI Networks</p>
+								
 							</div>
 						</div>
 					</div>
@@ -285,11 +330,9 @@
 							<div>
 								<h1>Puneet Jindal</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Chief Data Scientist</p><br>
+                                                                <p> Eduwaive Foundation</p>
+								
 							</div>
 						</div>
 					</div>
@@ -301,11 +344,8 @@
 							<div>
 								<h1>Punit Chawla</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Web Designer<br>Vizara Technologies</p>
+								
 							</div>
 						</div>
 					</div>
@@ -317,11 +357,8 @@
 							<div>
 								<h1>Ashish Bansal</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+                                                                  <p>TitleTech Lead,Leet Code</p>
+								
 							</div>
 						</div>
 					</div>
@@ -333,11 +370,8 @@
 							<div>
 								<h1>Sanyam Khurana</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Freelance Software Engineer & Open Source Contributor</p>
+								
 							</div>
 						</div>
 					</div>
@@ -349,11 +383,8 @@
 							<div>
 								<h1>Ls Chhabra</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Founder at Cyber Defence Intelligence - CDI Consulting</p>
+								
 							</div>
 						</div>
 					</div>
@@ -365,11 +396,8 @@
 							<div>
 								<h1>Ashish Jangra</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Ommzi Solutions</p>
+								
 							</div>
 						</div>
 					</div>
@@ -388,13 +416,12 @@
 						<div class="image"><img src="https://avatars2.githubusercontent.com/u/1790822?s=460&v=4"></div>
 						<div class="links">
 							<div>
+								
 								<h1>Joe Nash</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
+								
+								<p>Project manager for WILDLABS<br>Formerly GitHub Education</p>
 								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
 							</div>
 						</div>
 					</div>
@@ -406,11 +433,8 @@
 							<div>
 								<h1>Janu Verma</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Senior Machine Learning Scientist</p><br>
+                                                                 <p>Hike Messenger</p>
 							</div>
 						</div>
 					</div>
@@ -422,11 +446,8 @@
 							<div>
 								<h1>Jigyasa Grover</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Machine Learning Engineer<br> Red Hat Women in Open Source<br>
+								Facebook</p>
 							</div>
 						</div>
 					</div>
@@ -438,11 +459,7 @@
 							<div>
 								<h1>Khushbu Parekh</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Cloud Developer<br>AVI Networks</p>
 							</div>
 						</div>
 					</div>
@@ -454,11 +471,8 @@
 							<div>
 								<h1>Puneet Jindal</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Chief Data Scientist</p><br>
+                                                                <p> Eduwaive Foundation</p>
 							</div>
 						</div>
 					</div>
@@ -467,14 +481,10 @@
 					<div class="speakerwrapper">
 						<div class="image"><img src="images/Punit_Chawla.jpg"></div>
 						<div class="links">
-							<div>
-								<h1>Punit Chawla</h1>
+							<div><h1>Punit Chawla</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Web Designer<br>Vizara Technologies</p>
+								
 							</div>
 						</div>
 					</div>
@@ -486,11 +496,7 @@
 							<div>
 								<h1>Ashish Bansal</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>TitleTech Lead,Leet Code</p>
 							</div>
 						</div>
 					</div>
@@ -500,13 +506,10 @@
 						<div class="image"><img src="images/rsz_1sanyam_khurana.jpg"></div>
 						<div class="links">
 							<div>
-								<h1>Sanyam Khurana</h1>
+						        <h1>Sanyam Khurana</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Freelance Software Engineer & Open Source Contributor</p>
+
 							</div>
 						</div>
 					</div>
@@ -518,11 +521,7 @@
 							<div>
 								<h1>Ls Chhabra</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Founder at Cyber Defence Intelligence - CDI Consulting</p>
 							</div>
 						</div>
 					</div>
@@ -534,11 +533,8 @@
 							<div>
 								<h1>Ashish Jangra</h1>
 								<hr class="linkhr">
-								<p>Student Program</p>
-								<p>Manager at Github</p>
-								<br>
-								<p><a href=""><i class="fab fa-linkedin-in"></i></a></p>
-								<p><a href=""><i class="fab fa-twitter"></i></a></p>
+								<p>Ommzi Solutions</p>
+								
 							</div>
 						</div>
 					</div>
@@ -551,11 +547,19 @@
 		<h1>Gallery</h1>
 		<div class="gallery-wrapper center">
 			<div class="gallery-img-wrapper"><img src="images/image1.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image2.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/img8.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/img9.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/img10.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/img11.jpg"></div>
 			<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image4.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image5.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/img12.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/image2.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/img13.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/img14.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
 			<div class="gallery-img-wrapper"><img src="images/image6.jpg"></div>
+			<div class="gallery-img-wrapper"><img src="images/img15.jpg"></div>
 			<div class="gallery-img-wrapper"><img src="images/image7.jpg"></div>
 		</div>
 	</section>
@@ -575,26 +579,34 @@
 		</div>
 	</section>
 	<section id="contact">
-		<div class="row">
-			<div class="col-md-6 col-12">
-				<div class="contact">
-					<h1>Contact Us</h1>
+		<div class="container-fluid">
+			<div class="col-md-12 col-12" >
+				<iframe class="desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.476222317532!2d76.7704566151322!3d30.761210981627105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed86dfd21771%3A0xde925088c49b518f!2sPrincipal+P.L.+Anand+Auditorium!5e0!3m2!1sen!2sin!4v1560500269208!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0 ;width: 100%;" allowfullscreen></iframe>
+				<iframe class="mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.476222317532!2d76.7704566151322!3d30.761210981627105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed86dfd21771%3A0xde925088c49b518f!2sPrincipal+P.L.+Anand+Auditorium!5e0!3m2!1sen!2sin!4v1562217604448!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		
+			<div class="footer" style="background-color:dimgray;position:inherit; width: 100%;">
+            <div class="container">
+                <div class="col-lg-12">
+    <div class="footer-title"style="font-size:34px">Contact us</div>
+     <div style="height:5px;width:160px;background-color:red"></div>            
 					<hr class="contacthr">
 					<div class="row social">
-						<div class="col-4"><i class="fab fa-facebook"></i></div>
-						<div class="col-4"><i class="fab fa-twitter-square"></i></div>
-						<div class="col-4"><i class="fab fa-instagram"></i></div>
+						 <a href='https://www.facebook.com//sfdpu/'><div class="col-4"><i class="fab fa-facebook"></i></div></a>
+                        <a href='https://twitter.com/sfdpu'><div class="col-4"><i class="fab fa-twitter-square"></i></div></a>
+			<a href='https://instagram.com/sfdpu?igshid=dr9rnu9gmif0'><div class="col-4"><i class="fab fa-instagram"></i></div></a>
+
 					</div>
-					<p><i class="fas fa-phone-square"></i>+91-9923602126</p>
-					<p><i class="fas fa-phone-square"></i>+91-9923602126</p>
-					<p><i class="fas fa-envelope-square"></i>sfdchd.help@gmail.com</p>
+					<p><i class="fas fa-phone-square"></i>Ankur(+91-7081016235)</p>
+					<p><i class="fas fa-phone-square"></i>Samiksha(+91-9056608712)</p>
+					<p><i class="fas fa-envelope-square"></i>sfdpulug@gmail.com</p>
 					<p><i class="fas fa-map-marker-alt"></i>P.L. Anand Auditorium, Panjab University, Sector 14, Chandigarh, 160014</p>
 				</div>
 			</div>
-			<div class="col-md-6 col-12" >
-				<iframe class="desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.476222317532!2d76.7704566151322!3d30.761210981627105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed86dfd21771%3A0xde925088c49b518f!2sPrincipal+P.L.+Anand+Auditorium!5e0!3m2!1sen!2sin!4v1560500269208!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<iframe class="mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.476222317532!2d76.7704566151322!3d30.761210981627105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed86dfd21771%3A0xde925088c49b518f!2sPrincipal+P.L.+Anand+Auditorium!5e0!3m2!1sen!2sin!4v1562217604448!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+
+                </div>
+                
+			
 		</div>	
 	</section>
 	<script type="text/javascript">		
