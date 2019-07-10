@@ -1,732 +1,763 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>SFD 2019 | 10th Aniversarry Edition</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Aleo|Anton|Permanent+Marker|Questrial|Quicksand" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Poppins:400,700,900&display=swap" rel="stylesheet">
-	<meta name="description" content="Software Freedom Day 2017 is approaching, let's tell people about it! Software Freedom Day (aka SFD) is a yearly event organised all around the world by open source enthusiasts. The idea of SFD is for everyone without a vested interest in proprietary software to unite and educate the world about the ideals of Software Freedom and the practical benefits of Free Software. ">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="utf-8">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>SFD 2019 | 10th Aniversarry Edition</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Aleo|Anton|Permanent+Marker|Questrial|Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Poppins:400,700,900&display=swap" rel="stylesheet">
+		<meta name="description" content="Software Freedom Day 2017 is approaching, let's tell people about it! Software Freedom Day (aka SFD) is a yearly event organised all around the world by open source enthusiasts. The idea of SFD is for everyone without a vested interest in proprietary software to unite and educate the world about the ideals of Software Freedom and the practical benefits of Free Software. ">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="utf-8">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	<script type="text/javascript" src="scripts/slick.min.js"></script>
-    
-	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheetindex.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/slick.css">
-    <script>
-        $(document).ready(function(){
-            if($(window).height()<664 || $(window).width()<1064){
-            $('.about12').attr({href:"#1"});
-        }
-        else{
-            $('.about12').attr({href:'#2'});
-        }
-            
-        });
-	     
-	</script>
-	<script>
-        $(document).ready(function(){
-            if($(window).height()>664){
-            $('#events').css({paddingTop:"150px"});
-		    $('#speakers').css({paddingTop:"200px"});
-        }
-         
-        });
-        
-    </script>
-	
-    <script>
-        $(document).ready(function(){
-            if($(window).height()<664 || $(window).width()<1064){
-            $('.speak12').attr({href:"#speakersmobile"});
-        }
-        else{
-            $('.speak12').attr({href:'#speakers'});
-        }
-            
-        });
-        
-    </script>
-   <script>   jQuery(document).ready(function($) {
+		<script type="text/javascript" src="scripts/slick.min.js"></script>
+	    
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheetindex.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/slick.css">
+	    <script>
+	        $(document).ready(function(){
+	            if($(window).height()<664 || $(window).width()<1064){
+	            $('.about12').attr({href:"#1"});
+	        }
+	        else{
+	            $('.about12').attr({href:'#2'});
+	        }
+	            
+	        });
+		     
+		</script>
+		<script>
+	        $(document).ready(function(){
+	            if($(window).height()>664){
+	            $('#events').css({paddingTop:"150px"});
+			    $('#speakers').css({paddingTop:"200px"});
+	        }
+	         
+	        });
+	        
+	    </script>
+		
+	    <script>
+	        $(document).ready(function(){
+	            if($(window).height()<664 || $(window).width()<1064){
+	            $('.speak12').attr({href:"#speakersmobile"});
+	        }
+	        else{
+	            $('.speak12').attr({href:'#speakers'});
+	        }
+	            
+	        });
+	        
+	    </script>
+	   <script>   jQuery(document).ready(function($) {
 
-        $(".nav-link").click(function(event){
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 100);
-        });
-    });
-    </script>
-    <style type="text/css">
-    	#back{
+	        $(".nav-link").click(function(event){
+	            event.preventDefault();
+	            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 100);
+	        });
+	    });
+	    </script>
+	    <style type="text/css">
+	    	#back{
 
-    	}
-    </style>
+	    	}
+	    </style>
 
-}
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top menu stroke" style="padding:5px 30px; display:flex; color:#FFF; background-color:#000;">
-		<a class="navbar-brand mobile" id="navv" href="#"> <img src="images/sfd.png"> </a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="nav navbar-nav" data-toggle="collapse"data-target=".navbar-collapse" style="width:100%; color:#FFF; background-color:#000 ">
-		    	<!-- Freedom -->
-		    	<li class="nav-item">
-		        	<a class="nav-link about12">About Us</a>
-		     	</li>
-		     	<!-- Explore -->
-			    <li class="nav-item desktop">
-			    	<a class="nav-link" href="#events">Events</a>
-			    </li>
-			    <!-- Community -->
-			    <li class="nav-item">
-			        <a class="nav-link speak12">Speakers</a>
-			    </li>
-			    <li class="nav-item desktop">
-			        <a class="nav-link navbar-brand " id="navv" href="#"> <img src="images/sfd.png"height=50% width=50%s> </a>
-			    </li>
-			    <li class="nav-item">
-			        <a class="nav-link" href="#gallery">Gallery</a>
-			    </li> 
-			    <li class="nav-item">
-			        <a class="nav-link" href="#partners">Partners</a>
-			    </li> 
-			    <li class="nav-item">
-			        <a class="nav-link" href="#contact">Contact Us</a>
-			    </li>  
-		    </ul>
-		</div>
-	</nav>
-	<section class="landingwrapper desktop">
-		<div class="landing">
-			<div class="vidwrap">
-				<video autoplay="autoplay" loop="true">
-					<source src="videos/sfd.mp4"  type="video/mp4">
-					<source src="videos/sfd.ogg" type="video/ogg">
-					Your browser does not support the video tag.
-				</video>
+	}
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top menu stroke" style="padding:5px 30px; display:flex; color:#FFF; background-color:#000;">
+			<a class="navbar-brand mobile" id="navv" href="#"> <img src="images/sfd.png"> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="nav navbar-nav" data-toggle="collapse"data-target=".navbar-collapse" style="width:100%; color:#FFF; background-color:#000 ">
+			    	<!-- Freedom -->
+			    	<li class="nav-item">
+			        	<a class="nav-link about12">About Us</a>
+			     	</li>
+			     	<!-- Explore -->
+				    <li class="nav-item desktop">
+				    	<a class="nav-link" href="#events">Events</a>
+				    </li>
+				    <!-- Community -->
+				    <li class="nav-item">
+				        <a class="nav-link speak12">Speakers</a>
+				    </li>
+				    <li class="nav-item desktop">
+				        <a class="nav-link navbar-brand " id="navv" href="#"> <img src="images/sfd.png"height=50% width=50%s> </a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link" href="#gallery">Gallery</a>
+				    </li> 
+				    <li class="nav-item">
+				        <a class="nav-link" href="#partners">Partners</a>
+				    </li> 
+				    <li class="nav-item">
+				        <a class="nav-link" href="#contact">Contact Us</a>
+				    </li>  
+			    </ul>
 			</div>
-			<div class="landingwrap"id=2></div>
-               <div class="landingcontent" style="background-image: url(images/WhatsApp%20Image%202019-07-10%20at%2010.44.55%20AM.jpeg); background-size: 800px; background-repeat: no-repeat;background-position: center;z-index: ">
-								
-				<div class="fixedheaderwrapper" style="position: relative">
-					<div class="fixedheaders">
-						<div class="fixedheader"style="padding-top: 145px">
-							<div class="headers">Freedom.</div>
-							<div class="headers">Explore.</div>
-							<div class="headers">Community.</div>
+		</nav>
+		<section class="landingwrapper desktop">
+			<div class="landing">
+				<div class="vidwrap">
+					<video autoplay="autoplay" loop="true">
+						<source src="videos/sfd.mp4"  type="video/mp4">
+						<source src="videos/sfd.ogg" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="landingwrap"id=2></div>
+	               <div class="landingcontent" style="background-image: url(images/WhatsApp%20Image%202019-07-10%20at%2010.44.55%20AM.jpeg); background-size: 800px; background-repeat: no-repeat;background-position: center;z-index: ">
+									
+					<div class="fixedheaderwrapper" style="position: relative">
+						<div class="fixedheaders">
+							<div class="fixedheader"style="padding-top: 145px">
+								<div class="headers">Freedom.</div>
+								<div class="headers">Explore.</div>
+								<div class="headers">Community.</div>
+							</div>
 						</div>
 					</div>
+					<div class="About"style='padding-top: 200px'>
+						<h1>Software Freedom Day</h1>
+						<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
+					</div>
+					
 				</div>
-				<div class="About"style='padding-top: 200px'>
-					<h1>Software Freedom Day</h1>
-					<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
-				</div>
-				
 			</div>
-		</div>
-	</section>
-	<section class="landingphone mobile"style="padding-top: 55px">
-		
-		<div class="headingsphone">
-			<div class="landingwrapperphone">
+		</section>
+		<section class="landingphone mobile"style="padding-top: 55px">
+			
+			<div class="headingsphone">
+				<div class="landingwrapperphone">
+					<div>
+						<h1 class="fixedheaderphone">Freedom.</h1>
+						<h1 class="fixedheaderphone">Explore.</h1>
+						<h1 class="fixedheaderphone">Community.</h1>
+					</div>
+				</div>
+			</div>
+			<div class="About"id=1>
+				<h1>Software Freedom Day</h1>
+				<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
+			</div>
+		</section>
+		<section id="events"style='height:200px;padding-top:5px'>
+			<h1 class="eventheading" style="text-align: center;">Events</h1>
+	        <div class="eventswrapper" style='text-align:center;margin-top:95px;font-size:30px'>
+	        Coming Soon...</div>
+	       
+	        <!--
+			<div class="eventswrapper">
+				<table class="day1">
+					<thead>
+						<th colspan="3">Day 1</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>09:45 - 10:00</td>
+							<td>Opening notes</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>10:00 - 11:00</td>
+							<td>Opening keynote</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>11:00 - 11:45</td>
+							<td>Open Source Journey</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>11:45 - 12:30</td>
+							<td>Sponsor Talk</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>12:30 - 13:30</td>
+							<td>Lunch</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>13:30 - 14:00</td>
+							<td>Lightening Talks</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>14:00 - 14:45</td>
+							<td>Open doors for Open Source</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>14:45 - 15:30</td>
+							<td>Visual Boom</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>15:30 - 16:30</td>
+							<td>Closing Keynote</td>
+							<td>Speaker</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="day2">
+					<thead>
+						<th colspan="3">Day 2</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>11:00 - 11:45</td>
+							<td>ML from Industry perspective</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>11:45 - 12:30</td>
+							<td>Panel Discussion</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>12:30 - 13:30</td>
+							<td>Lunch</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>13:30 - 14:00</td>
+							<td>Lightening Talks</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>14:00 - 14:45</td>
+							<td>Gamer to Game Developer</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>14:45 - 15:30</td>
+							<td>Bucket of Open Source Cyber Sec</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>15:30 - 16:30</td>
+							<td>Closing Keynote</td>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<td>16:30 - 16:45</td>
+							<td>Closing Notes</td>
+							<td>Speaker</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>-->
+	        
+		</section>
+		<section id="speakers" class="desktop"style='padding-top:40px'>
+			<div class="speakerinfo">
 				<div>
-					<h1 class="fixedheaderphone">Freedom.</h1>
-					<h1 class="fixedheaderphone">Explore.</h1>
-					<h1 class="fixedheaderphone">Community.</h1>
+					<h1 class="speakerheading selectedspeaker">Past Speakers</h1>
+					
 				</div>
 			</div>
-		</div>
-		<div class="About"id=1>
-			<h1>Software Freedom Day</h1>
-			<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
-		</div>
-	</section>
-	<section id="events"style='height:200px;padding-top:5px'>
-		<h1 class="eventheading">Events</h1>
-        <div class="eventswrapper" style='text-align:center;margin-top:95px;font-size:30px'>
-        Coming Soon...</div>
-       
-        <!--
-		<div class="eventswrapper">
-			<table class="day1">
-				<thead>
-					<th colspan="3">Day 1</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td>09:45 - 10:00</td>
-						<td>Opening notes</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>10:00 - 11:00</td>
-						<td>Opening keynote</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>11:00 - 11:45</td>
-						<td>Open Source Journey</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>11:45 - 12:30</td>
-						<td>Sponsor Talk</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>12:30 - 13:30</td>
-						<td>Lunch</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>13:30 - 14:00</td>
-						<td>Lightening Talks</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>14:00 - 14:45</td>
-						<td>Open doors for Open Source</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>14:45 - 15:30</td>
-						<td>Visual Boom</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>15:30 - 16:30</td>
-						<td>Closing Keynote</td>
-						<td>Speaker</td>
-					</tr>
-				</tbody>
-			</table>
-			<table class="day2">
-				<thead>
-					<th colspan="3">Day 2</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td>11:00 - 11:45</td>
-						<td>ML from Industry perspective</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>11:45 - 12:30</td>
-						<td>Panel Discussion</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>12:30 - 13:30</td>
-						<td>Lunch</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>13:30 - 14:00</td>
-						<td>Lightening Talks</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>14:00 - 14:45</td>
-						<td>Gamer to Game Developer</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>14:45 - 15:30</td>
-						<td>Bucket of Open Source Cyber Sec</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>15:30 - 16:30</td>
-						<td>Closing Keynote</td>
-						<td>Speaker</td>
-					</tr>
-					<tr>
-						<td>16:30 - 16:45</td>
-						<td>Closing Notes</td>
-						<td>Speaker</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>-->
-        
-	</section>
-	<section id="speakers" class="desktop"style='padding-top:40px'>
-		<div class="speakerinfo">
-			<div>
-				<h1 class="speakerheading selectedspeaker">Past Speakers</h1>
+			<div class="speakerpic">
+				<div class="speakers row">
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="https://avatars2.githubusercontent.com/u/1790822?s=460&v=4"></div>
+							<div class="links">
+								<div>
+									<h1>Joe Nash</h1>
+									<hr class="linkhr">
+									
+									<p>Project manager for WILDLABS<br>Formerly GitHub Education</p>
+									<br>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Janu_Verma.jpg" sty></div>
+							<div class="links">
+								<div>
+									<h1>Janu Verma</h1>
+									<hr class="linkhr">
+									<p>Senior Machine Learning Scientist</p><br>
+	                                                                 <p>Hike Messenger</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Jigyasa_grover.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Jigyasa Grover</h1>
+									<hr class="linkhr">
+									<p>Machine Learning Engineer<br>Red Hat Women in Open Source<br>
+									Facebook</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Khushbu_Parekh.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Khushbu Parekh</h1>
+									<hr class="linkhr">
+									<p>Cloud Developer<br>AVI Networks</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Puneet_jindal.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Puneet Jindal</h1>
+									<hr class="linkhr">
+									<p>Chief Data Scientist</p><br>
+	                                                                <p> Eduwaive Foundation</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Punit_Chawla.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Punit Chawla</h1>
+									<hr class="linkhr">
+									<p>Web Designer<br>Vizara Technologies</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/rsz_1ashish-bansal.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Ashish Bansal</h1>
+									<hr class="linkhr">
+	                                                                  <p>TitleTech Lead,Leet Code</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/rsz_1sanyam_khurana.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Sanyam Khurana</h1>
+									<hr class="linkhr">
+									<p>Freelance Software Engineer & Open Source Contributor</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/rsz_ls_chhabra.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Ls Chhabra</h1>
+									<hr class="linkhr">
+									<p>Founder at Cyber Defence Intelligence - CDI Consulting</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/rsz_2ashish_jangra.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Ashish Jangra</h1>
+									<hr class="linkhr">
+									<p>Ommzi Solutions</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="speakerhr desktop">
+		</section>
+		<section id="speakersmobile" class="mobile">
+				<h1 class="speakerheading selectedspeakermobile">Past Speakers</h1>
+	<!-- 				<h1 class="speakerheading">Keynote Speakers</h1>
+	 -->		<div class="speakerpic">
+				<div class="speakers centerspeaker">
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="https://avatars2.githubusercontent.com/u/1790822?s=460&v=4"></div>
+							<div class="links">
+								<div>
+									
+									<h1>Joe Nash</h1>
+									<hr class="linkhr">
+									
+									<p>Project manager for WILDLABS<br>Formerly GitHub Education</p>
+									<br>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Janu_Verma.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Janu Verma</h1>
+									<hr class="linkhr">
+									<p>Senior Machine Learning Scientist</p><br>
+	                                                                 <p>Hike Messenger</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Jigyasa_grover.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Jigyasa Grover</h1>
+									<hr class="linkhr">
+									<p>Machine Learning Engineer<br> Red Hat Women in Open Source<br>
+									Facebook</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Khushbu_Parekh.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Khushbu Parekh</h1>
+									<hr class="linkhr">
+									<p>Cloud Developer<br>AVI Networks</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Puneet_jindal.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Puneet Jindal</h1>
+									<hr class="linkhr">
+									<p>Chief Data Scientist</p><br>
+	                                                                <p> Eduwaive Foundation</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/Punit_Chawla.jpg"></div>
+							<div class="links">
+								<div><h1>Punit Chawla</h1>
+									<hr class="linkhr">
+									<p>Web Designer<br>Vizara Technologies</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/rsz_1ashish-bansal.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Ashish Bansal</h1>
+									<hr class="linkhr">
+									<p>TitleTech Lead,Leet Code</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/rsz_1sanyam_khurana.jpg"></div>
+							<div class="links">
+								<div>
+							        <h1>Sanyam Khurana</h1>
+									<hr class="linkhr">
+									<p>Freelance Software Engineer & Open Source Contributor</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/rsz_ls_chhabra.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Ls Chhabra</h1>
+									<hr class="linkhr">
+									<p>Founder at Cyber Defence Intelligence - CDI Consulting</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="speakerwrapper">
+							<div class="image"><img src="images/rsz_2ashish_jangra.jpg"></div>
+							<div class="links">
+								<div>
+									<h1>Ashish Jangra</h1>
+									<hr class="linkhr">
+									<p>Ommzi Solutions</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="speakerhr desktop">
+		</section>
+		<section id="gallery">
+			<h1>Gallery</h1>
+			<div class="gallery-wrapper center">
+				<div class="gallery-img-wrapper"><img src="images/image1.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/img8.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/img9.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/img10.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/img11.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/img12.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/image2.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/img13.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/img14.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/image6.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/img15.jpg"></div>
+				<div class="gallery-img-wrapper"><img src="images/image7.jpg"></div>
+			</div>
+		</section>
+		<section id="partners" >
+			<div class="maindiv">
+				<h1>Our Previous Partners</h1>
+	            
+				<div class="row">
+					<div class="col-md-3 col-12"><img src="images/dubeat.png"></div>
+					<div class="col-md-3 col-12"><img src="images/msi.png"></div>
+					<div class="col-md-3 col-12"><img src="images/leetcode.png"></div>
+					<div class="col-md-3 col-12"><img src="images/digitalocean.png"></div>
+					<div class="col-md-3 col-12"><img src="images/gitlab.png"></div>
+					<div class="col-md-3 col-12"><img src="images/bullseye.png"></div>
+					<div class="col-md-3 col-12"><img src="images/pu-mirror.jpg"></div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container-fluid">
+				<div class="row">
+	                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.4761204598667!2d76.77129280848959!3d30.761213841524725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed86dfd21771%3A0xde925088c49b518f!2sPrincipal+P.L.+Anand+Auditorium!5e0!3m2!1sen!2sin!4v1528459861960" width="100%" height="300" frameborder="0" style="border:0;"></iframe>
+	            </div>
+	        <div class=""style="background-color:black">
+	            <div class="container home-intro-container">
+	                <div class="home-intro"> 
+	                    <div class="row">
+	                        <div class="col-md-5">
+	                            <div class="intro-info">
+	                                <div class="intro-icon-1">
+	                                    <img class="intro-icon" src="http://uploads.webflow.com/55f136e3684d4f9831291da5/55deeba480d69d995c0a3f81_Icon-location.png"></div>
+	                                <div class="intro-info-title">PL Aanand Auditorium</div>
+	                                <div class="intro-info-title subtitle">Punjab University Chandigarh</div>
+	                            </div>
+	                        </div>
+	                        <div class="col-md-4">
+	                            <div class="intro-info">
+	                                <div class="intro-icon-1">
+	                                    <img class="intro-icon" src="http://uploads.webflow.com/55f136e3684d4f9831291da5/55df47f76eb90ccf3db3c576_Icon-calendar.png"></div>
+	                                <div class="intro-info-title">September 19</div>
+	                                <div class="intro-info-title subtitle">19-09-2015</div>
+	                            </div>
+	                        </div>
+	                        <div class="col-md-3">
+	                            <div class="intro-info">
+	                               
+	                                <div class="intro-icon-1">
+	                                    <img class="intro-icon" src="http://uploads.webflow.com/55f136e3684d4f9831291da5/55df48013799381e1cb5a1f6_Icon-ticket.png"></div>
+	                                    <div class="col btn btn-success btn-xs">
+	                                <div class="intro-info-title subtitle" style="font-size:19px">Register now!</div>
+	                                    </div>
+	                                    
+	                        </div>
+	                    </div>
+	                </div>
+	                </div></div>
+			
+				<div class="footer" style="background-color:dimgray;position:inherit; width: 100%;">
+	            <div class="container">
+	                <div class="col-lg-12">
+	    <div class="footer-title"style="font-size:34px">Contact us</div>
+	     <div style="height:5px;width:160px;background-color:red"></div>            
+						<hr class="contacthr">
+						<div class="row social">
+							 <a href='https://www.facebook.com//sfdpu/'><div class="col-4"><i class="fab fa-facebook"></i></div></a>
+	                        <a href='https://twitter.com/sfdpu'><div class="col-4"><i class="fab fa-twitter-square"></i></div></a>
+				<a href='https://instagram.com/sfdpu?igshid=dr9rnu9gmif0'><div class="col-4"><i class="fab fa-instagram"></i></div></a>
+
+						</div>
+						<p><i class="fas fa-phone-square"></i>Ankur(+91-7081016235)</p>
+						<p><i class="fas fa-phone-square"></i>Samiksha(+91-9056608712)</p>
+						<p><i class="fas fa-envelope-square"></i>sfdpulug@gmail.com</p>
+					</div>
+				</div>
+
+	                </div>
+	                
 				
-			</div>
-		</div>
-		<div class="speakerpic">
-			<div class="speakers row">
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="https://avatars2.githubusercontent.com/u/1790822?s=460&v=4"></div>
-						<div class="links">
-							<div>
-								<h1>Joe Nash</h1>
-								<hr class="linkhr">
-								
-								<p>Project manager for WILDLABS<br>Formerly GitHub Education</p>
-								<br>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Janu_Verma.jpg" sty></div>
-						<div class="links">
-							<div>
-								<h1>Janu Verma</h1>
-								<hr class="linkhr">
-								<p>Senior Machine Learning Scientist</p><br>
-                                                                 <p>Hike Messenger</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Jigyasa_grover.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Jigyasa Grover</h1>
-								<hr class="linkhr">
-								<p>Machine Learning Engineer<br>Red Hat Women in Open Source<br>
-								Facebook</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Khushbu_Parekh.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Khushbu Parekh</h1>
-								<hr class="linkhr">
-								<p>Cloud Developer<br>AVI Networks</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Puneet_jindal.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Puneet Jindal</h1>
-								<hr class="linkhr">
-								<p>Chief Data Scientist</p><br>
-                                                                <p> Eduwaive Foundation</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Punit_Chawla.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Punit Chawla</h1>
-								<hr class="linkhr">
-								<p>Web Designer<br>Vizara Technologies</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/rsz_1ashish-bansal.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Ashish Bansal</h1>
-								<hr class="linkhr">
-                                                                  <p>TitleTech Lead,Leet Code</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/rsz_1sanyam_khurana.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Sanyam Khurana</h1>
-								<hr class="linkhr">
-								<p>Freelance Software Engineer & Open Source Contributor</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/rsz_ls_chhabra.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Ls Chhabra</h1>
-								<hr class="linkhr">
-								<p>Founder at Cyber Defence Intelligence - CDI Consulting</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/rsz_2ashish_jangra.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Ashish Jangra</h1>
-								<hr class="linkhr">
-								<p>Ommzi Solutions</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="speakerhr desktop">
-	</section>
-	<section id="speakersmobile" class="mobile">
-			<h1 class="speakerheading selectedspeakermobile">Past Speakers</h1>
-<!-- 				<h1 class="speakerheading">Keynote Speakers</h1>
- -->		<div class="speakerpic">
-			<div class="speakers centerspeaker">
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="https://avatars2.githubusercontent.com/u/1790822?s=460&v=4"></div>
-						<div class="links">
-							<div>
-								
-								<h1>Joe Nash</h1>
-								<hr class="linkhr">
-								
-								<p>Project manager for WILDLABS<br>Formerly GitHub Education</p>
-								<br>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Janu_Verma.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Janu Verma</h1>
-								<hr class="linkhr">
-								<p>Senior Machine Learning Scientist</p><br>
-                                                                 <p>Hike Messenger</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Jigyasa_grover.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Jigyasa Grover</h1>
-								<hr class="linkhr">
-								<p>Machine Learning Engineer<br> Red Hat Women in Open Source<br>
-								Facebook</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Khushbu_Parekh.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Khushbu Parekh</h1>
-								<hr class="linkhr">
-								<p>Cloud Developer<br>AVI Networks</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Puneet_jindal.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Puneet Jindal</h1>
-								<hr class="linkhr">
-								<p>Chief Data Scientist</p><br>
-                                                                <p> Eduwaive Foundation</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/Punit_Chawla.jpg"></div>
-						<div class="links">
-							<div><h1>Punit Chawla</h1>
-								<hr class="linkhr">
-								<p>Web Designer<br>Vizara Technologies</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/rsz_1ashish-bansal.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Ashish Bansal</h1>
-								<hr class="linkhr">
-								<p>TitleTech Lead,Leet Code</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/rsz_1sanyam_khurana.jpg"></div>
-						<div class="links">
-							<div>
-						        <h1>Sanyam Khurana</h1>
-								<hr class="linkhr">
-								<p>Freelance Software Engineer & Open Source Contributor</p>
+			</div>	
+		</section>
+		<script type="text/javascript">		
+			var x = $('.speakers .col-6:nth-child(6)').offset();
+			var z = $('.speakers .col-6:nth-child(9)').offset();
+			var zz = $('.speakers .col-6:nth-child(9)').height();
+			var y = $('#events').offset();
+			var checkpointone = $('.landing').height()+130;	
+			var checkpointtwo = $('#events').height()*4/5+y.top;
+			var checkpointthree = x.top + $('.speakers .col-6:nth-child(6)').height()/2;
+			var checkpointfour = z.top+zz;	
+			$(window).scroll(function(){
+				if($(window).scrollTop()>=136){
+					$('.fixedheaders').addClass('Highlight');
+					$('.headers').removeClass("selected");
+					$('.headers:nth-child(1)').addClass('selected');
+				}else{
+					$('.fixedheaders').removeClass('Highlight');
+				}
+				if($(window).scrollTop()>checkpointone && $(window).scrollTop()<checkpointtwo){
+					$('.fixedheader').removeClass('shift2');
+					$('.headers').removeClass("selected");
+					$('.fixedheader').addClass("shift1");				
+					$('.headers:nth-child(2)').addClass("selected");
+				} 
+				if($(window).scrollTop()<=checkpointone && $(window).scrollTop()>136){
+					$('.fixedheader').removeClass("shift1")
+				} 
+				if($(window).scrollTop()>=checkpointtwo){
+					$('.fixedheader').addClass('shift2');
+					$('.headers').removeClass('selected');
+					$('.headers:nth-child(3)').addClass('selected');
+				} 
+				if($(window).scrollTop()>=checkpointthree){
+					$('.speakerinfo').addClass('speakerinfomoveup');
+					$('.speakerheading').removeClass('selectedspeaker');
+					$('.speakerheading:nth-child(2)').addClass('selectedspeaker');
+				}
+				if($(window).scrollTop()<checkpointthree){
+					$('.speakerheading').removeClass('selectedspeaker');
+					$('.speakerheading:nth-child(1)').addClass('selectedspeaker');				
+					$('.speakerinfo').removeClass('speakerinfomoveup');
+				}
+				if($(window).scrollTop()>=checkpointfour){
+					$('.fixedheader').addClass("shift3");
+					$(".fixedheaders").addClass("cp4");
+				}
+				if($(window).scrollTop()<checkpointfour){
+					$(".fixedheaders").removeClass("cp4");
+					$('.fixedheader').removeClass("shift3");
+				}
+			});
+			$(document).ready(function() {
+				// $(".links").height() = $(".links").width();
+				// $('button').click(function(){
+				// 	var x = $('table');
+				// 	var xoff = x.offset();
+				// 	alert(xoff.top);
+				// 	alert($("table").height());
+				// 	// var h = $('nav').height();
+				// 	// alert(h);
+				// });
+				// var x = $('.speakers .col-6:nth-child(6)').offset();
+				// $('button').click(function(){
+				// 	alert(x.top);
+				// })
+					$('.center').slick({
+						centerMode: true,
+						centerPadding: '60px',
+						slidesToShow: 2,
+						responsive: [
+						{
+						  breakpoint: 768,
+						  settings: {
+						    arrows: false,
+						    centerMode: true,
+						    centerPadding: '40px',
+						    slidesToShow: 1
+						  }
+						},
+						{
+						  breakpoint: 480,
+						  settings: {
+						    arrows: false,
+						    centerMode: true,
+						    centerPadding: '40px',
+						    slidesToShow: 1
+						  }
+						}
+						]
+					});
+					$('.centerspeaker').slick({
+						centerMode: true,
+						centerPadding: '60px',
+						slidesToShow: 2,
+						responsive: [
+						{
+						  breakpoint: 768,
+						  settings: {
+						    arrows: false,
+						    centerMode: true,
+						    centerPadding: '40px',
+						    slidesToShow: 1
+						  }
+						},
+						{
+						  breakpoint: 480,
+						  settings: {
+						    arrows: false,
+						    centerMode: true,
+						    centerPadding: '40px',
+						    slidesToShow: 1
+						  }
+						}
+						]
+					});
+				$('video').prop('muted',true).play();
+				
+			});
 
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/rsz_ls_chhabra.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Ls Chhabra</h1>
-								<hr class="linkhr">
-								<p>Founder at Cyber Defence Intelligence - CDI Consulting</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="speakerwrapper">
-						<div class="image"><img src="images/rsz_2ashish_jangra.jpg"></div>
-						<div class="links">
-							<div>
-								<h1>Ashish Jangra</h1>
-								<hr class="linkhr">
-								<p>Ommzi Solutions</p>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="speakerhr desktop">
-	</section>
-	<section id="gallery">
-		<h1>Gallery</h1>
-		<div class="gallery-wrapper center">
-			<div class="gallery-img-wrapper"><img src="images/image1.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/img8.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/img9.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/img10.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/img11.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/img12.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image2.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/img13.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/img14.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image3.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image6.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/img15.jpg"></div>
-			<div class="gallery-img-wrapper"><img src="images/image7.jpg"></div>
-		</div>
-	</section>
-	<section id="partners" >
-		<div class="maindiv">
-			<h1>Our Previous Partners</h1>
-            
-			<div class="row">
-				<div class="col-md-3 col-12"><img src="images/dubeat.png"></div>
-				<div class="col-md-3 col-12"><img src="images/msi.png"></div>
-				<div class="col-md-3 col-12"><img src="images/leetcode.png"></div>
-				<div class="col-md-3 col-12"><img src="images/digitalocean.png"></div>
-				<div class="col-md-3 col-12"><img src="images/gitlab.png"></div>
-				<div class="col-md-3 col-12"><img src="images/bullseye.png"></div>
-				<div class="col-md-3 col-12"><img src="images/pu-mirror.jpg"></div>
-			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<div class="container-fluid">
-			<div class="col-md-12 col-12" >
-				<iframe class="desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.476222317532!2d76.7704566151322!3d30.761210981627105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed86dfd21771%3A0xde925088c49b518f!2sPrincipal+P.L.+Anand+Auditorium!5e0!3m2!1sen!2sin!4v1560500269208!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0 ;width: 100%;" allowfullscreen></iframe>
-				<iframe class="mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.476222317532!2d76.7704566151322!3d30.761210981627105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed86dfd21771%3A0xde925088c49b518f!2sPrincipal+P.L.+Anand+Auditorium!5e0!3m2!1sen!2sin!4v1562217604448!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-		
-			<div class="footer" style="background-color:dimgray;position:inherit; width: 100%;">
-            <div class="container">
-                <div class="col-lg-12">
-    <div class="footer-title"style="font-size:34px">Contact us</div>
-     <div style="height:5px;width:160px;background-color:red"></div>            
-					<hr class="contacthr">
-					<div class="row social">
-						 <a href='https://www.facebook.com//sfdpu/'><div class="col-4"><i class="fab fa-facebook"></i></div></a>
-                        <a href='https://twitter.com/sfdpu'><div class="col-4"><i class="fab fa-twitter-square"></i></div></a>
-			<a href='https://instagram.com/sfdpu?igshid=dr9rnu9gmif0'><div class="col-4"><i class="fab fa-instagram"></i></div></a>
-
-					</div>
-					<p><i class="fas fa-phone-square"></i>Ankur(+91-7081016235)</p>
-					<p><i class="fas fa-phone-square"></i>Samiksha(+91-9056608712)</p>
-					<p><i class="fas fa-envelope-square"></i>sfdpulug@gmail.com</p>
-					<p><i class="fas fa-map-marker-alt"></i>P.L. Anand Auditorium, Panjab University, Sector 14, Chandigarh, 160014</p>
-				</div>
-			</div>
-
-                </div>
-                
-			
-		</div>	
-	</section>
-	<script type="text/javascript">		
-		var x = $('.speakers .col-6:nth-child(6)').offset();
-		var z = $('.speakers .col-6:nth-child(9)').offset();
-		var zz = $('.speakers .col-6:nth-child(9)').height();
-		var y = $('#events').offset();
-		var checkpointone = $('.landing').height()+130;	
-		var checkpointtwo = $('#events').height()*4/5+y.top;
-		var checkpointthree = x.top + $('.speakers .col-6:nth-child(6)').height()/2;
-		var checkpointfour = z.top+zz;	
-		$(window).scroll(function(){
-			if($(window).scrollTop()>=136){
-				$('.fixedheaders').addClass('Highlight');
-				$('.headers').removeClass("selected");
-				$('.headers:nth-child(1)').addClass('selected');
-			}else{
-				$('.fixedheaders').removeClass('Highlight');
-			}
-			if($(window).scrollTop()>checkpointone && $(window).scrollTop()<checkpointtwo){
-				$('.fixedheader').removeClass('shift2');
-				$('.headers').removeClass("selected");
-				$('.fixedheader').addClass("shift1");				
-				$('.headers:nth-child(2)').addClass("selected");
-			} 
-			if($(window).scrollTop()<=checkpointone && $(window).scrollTop()>136){
-				$('.fixedheader').removeClass("shift1")
-			} 
-			if($(window).scrollTop()>=checkpointtwo){
-				$('.fixedheader').addClass('shift2');
-				$('.headers').removeClass('selected');
-				$('.headers:nth-child(3)').addClass('selected');
-			} 
-			if($(window).scrollTop()>=checkpointthree){
-				$('.speakerinfo').addClass('speakerinfomoveup');
-				$('.speakerheading').removeClass('selectedspeaker');
-				$('.speakerheading:nth-child(2)').addClass('selectedspeaker');
-			}
-			if($(window).scrollTop()<checkpointthree){
-				$('.speakerheading').removeClass('selectedspeaker');
-				$('.speakerheading:nth-child(1)').addClass('selectedspeaker');				
-				$('.speakerinfo').removeClass('speakerinfomoveup');
-			}
-			if($(window).scrollTop()>=checkpointfour){
-				$('.fixedheader').addClass("shift3");
-				$(".fixedheaders").addClass("cp4");
-			}
-			if($(window).scrollTop()<checkpointfour){
-				$(".fixedheaders").removeClass("cp4");
-				$('.fixedheader').removeClass("shift3");
-			}
-		});
-		$(document).ready(function() {
-			// $(".links").height() = $(".links").width();
-			// $('button').click(function(){
-			// 	var x = $('table');
-			// 	var xoff = x.offset();
-			// 	alert(xoff.top);
-			// 	alert($("table").height());
-			// 	// var h = $('nav').height();
-			// 	// alert(h);
-			// });
-			// var x = $('.speakers .col-6:nth-child(6)').offset();
-			// $('button').click(function(){
-			// 	alert(x.top);
-			// })
-				$('.center').slick({
-					centerMode: true,
-					centerPadding: '60px',
-					slidesToShow: 2,
-					responsive: [
-					{
-					  breakpoint: 768,
-					  settings: {
-					    arrows: false,
-					    centerMode: true,
-					    centerPadding: '40px',
-					    slidesToShow: 1
-					  }
-					},
-					{
-					  breakpoint: 480,
-					  settings: {
-					    arrows: false,
-					    centerMode: true,
-					    centerPadding: '40px',
-					    slidesToShow: 1
-					  }
-					}
-					]
-				});
-				$('.centerspeaker').slick({
-					centerMode: true,
-					centerPadding: '60px',
-					slidesToShow: 2,
-					responsive: [
-					{
-					  breakpoint: 768,
-					  settings: {
-					    arrows: false,
-					    centerMode: true,
-					    centerPadding: '40px',
-					    slidesToShow: 1
-					  }
-					},
-					{
-					  breakpoint: 480,
-					  settings: {
-					    arrows: false,
-					    centerMode: true,
-					    centerPadding: '40px',
-					    slidesToShow: 1
-					  }
-					}
-					]
-				});
-			$('video').prop('muted',true).play();
-			
-		});
-
-	</script>
-</body>
-</html>
+		</script>
+	</body>
+	</html>
